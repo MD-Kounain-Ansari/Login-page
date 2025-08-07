@@ -1,39 +1,93 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9fbb2;
-    color: #7c6354;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
 }
- header{
-    position: static;
-   text-align: center;
- }
-body{
+
+body {
+    background: url('1000184713.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     flex-direction: column;
+    color: #ffffff;
 }
 
-form{
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 2em;
+    color: #ff4444;
+    text-shadow: 2px 2px 4px black;
+}
+
+form {
     display: flex;
-    flex-direction: column;   /* this tag help to arrange form header or anything vertically */
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgb(100, 255, 170);
-    position: relative;
-    top: 50px;
+    box-shadow: 0 0 25px #00ffcc;
+    width: 350px;
+    gap: 20px;
+}
+
+label {
+    color: #ffcc00;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+button {
+    padding: 12px;
+    background-color: #ff4444;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: rgb(249, 7, 7);
-    color: rgb(42, 249, 5);
-    transition: 1 ease 0.5s;
+    background-color: #00ffcc;
+    color: #000;
 }
 
-@media(max-width:400px){
-    form{
-        width:90%;
+.help-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.help-links a {
+    color: #00ffee;
+    text-decoration: none;
+}
+
+.help-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+    form {
+        width: 90%;
     }
 }
