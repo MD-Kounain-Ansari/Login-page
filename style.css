@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #f9fbb2;
+    color: #7c6354;
+}
+ header{
+    position: static;
+   text-align: center;
+ }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;   /* this tag help to arrange form header or anything vertically */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(100, 255, 170);
+    position: relative;
+    top: 50px;
+}
+
+button:hover {
+    background-color: rgb(249, 7, 7);
+    color: rgb(42, 249, 5);
+    transition: 1 ease 0.5s;
+}
+
+@media(max-width:400px){
+    form{
+        width:90%;
+    }
+}
