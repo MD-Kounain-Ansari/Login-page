@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive login page</title>
-
-    <link rel="stylesheet" href="style.css"> 
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Login Page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body> 
-      <header>
-     <h1 class="title"> Student Login Form </h1>
-</header>
+<body>
+  <header>
+    <h1 class="title">Student Login Form</h1>
+  </header>
 
-<main>
-     <form action="/action.php">
-     <div id="n">
-<label for="name"> Full Name :</label>
-<input type="text">
-     </div>
+  <main>
+    <form action="/action.php" method="POST">
+      <div>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required />
+      </div>
 
- <div id="e">
-<label for="name"> Email:</label>
-<input type="email" >
-     </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
 
-     <div id="p">
-<label for="name"> Password </label>
- <input type="password">
-     </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
 
-<button name="submit" value="submit">Submit</button>
-<br>
+      <button type="submit">Submit</button>
 
-<p> Facing An Issue </p>
-
-<a href="#" >Forgot Your Password?</a> 
-        <a href="#" >Help</a>
-</form>
-</main>
-    
+      <p>Facing an issue?</p>
+      <div class="help-links">
+        <a href="#">Forgot Your Password?</a>
+        <a href="#">Help</a>
+      </div>
+    </form>
+  </main>
 </body>
 </html>
